@@ -17,8 +17,15 @@
         "zendframework/zend-mvc": "^3.0.1",
         "zfcampus/zf-development-mode": "^3.0",
         "doctrine/orm": "v2.5.*",
-        "almasaeed2010/adminlte" : "2.3.*"
+        "almasaeed2010/adminlte" : "2.3.*",
+        "anonym3000/core-library": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "git@github.com:anonym3000/core-library.git"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Application\\": "module/Application/src/"
