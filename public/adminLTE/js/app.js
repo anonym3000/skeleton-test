@@ -247,9 +247,9 @@ function _init() {
         _this.fixSidebar();
       });
     },
-    fix: function () {
+    fix: function () { 
       //Get window height and the wrapper height
-      var neg = $('.main-header').outerHeight() + $('.main-footer').outerHeight();
+      var neg = $('.main-header').outerHeight();
       var window_height = $(window).height();
       var sidebar_height = $(".sidebar").height();
       //Set the min-height of the content and sidebar based on the

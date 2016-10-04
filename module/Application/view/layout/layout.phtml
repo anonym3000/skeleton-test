@@ -1,6 +1,6 @@
 <?= $this->doctype() ?>
 
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
         <?= $this->headTitle('Skeleton Application')->setSeparator(' - ')->setAutoEscape(false) ?>
@@ -23,8 +23,11 @@
 
         <!-- Scripts -->
         <?= $this->headScript() 
+            ->prependFile($this->basePath('adminLTE/js/app.min.js'))
             ->prependFile($this->basePath('js/bootstrap.min.js'))
+            //->prependFile($this->basePath('plugins/jQuery/jquery-2.2.3.min.js'))
             ->prependFile($this->basePath('js/jquery-3.1.1.min.js'))
+            
         ?>  
 		     
 		  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -131,8 +134,8 @@
 		<!-- FastClick -->
 		<!-- <script src="plugins/fastclick/fastclick.js"></script> -->
          
-        <?= $this->inlineScript()
-        		 ->prependFile($this->basePath('adminLTE/js/app.min.js')) 
+        <?= $this->inlineScript();
+        		 
         ?>
     </body>
 </html>
