@@ -13,6 +13,8 @@ use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
 
 class IndexControllerTest extends AbstractHttpControllerTestCase
 {
+    protected $traceError = true;
+
     public function setUp()
     {
         // The module configuration should still be applicable for tests.
